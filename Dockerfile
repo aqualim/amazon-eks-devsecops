@@ -2,7 +2,7 @@ FROM public.ecr.aws/amazonlinux/amazonlinux:latest
 
 # Install dependencies
 RUN yum install -y \
-    curl \
+   # curl \
     httpd \
     php \
  && ln -s /usr/sbin/httpd /usr/sbin/apache2
